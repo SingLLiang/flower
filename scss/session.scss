@@ -1,0 +1,70 @@
+@charset 'utf-8';
+@import 'reset';
+@import 'common';
+
+.wrap {
+  > .container {
+    header {
+      display: inline-block;
+      position: relative;
+      color: $color;
+      select {
+        margin-top: 9vw;
+        margin-left: 7vw;
+        line-height: 6vw;
+        font-size: 4vw;
+        color: $color;
+        appearance: none;
+        outline: none;
+        border: none;
+        background-color: transparent;
+      }
+      &::after {
+        content: '';
+        border-color: $color transparent transparent transparent;
+        border-width: 2vw 1vw;
+        border-style: solid;
+        position: absolute;
+        left: 102%;
+        top: 75%;
+      }
+    }
+
+    main {
+      color: $color;
+      font-size: 4vw;
+      .top {
+        margin: 11vw 0 10vw;
+        display: flex;
+
+        p {
+          width: 50%;
+          text-align: center;
+        }
+      }
+      .content {
+        overflow: auto;
+        height: 50vw;
+        li {
+          display: flex;
+          color: #434242;
+          margin-bottom: 11vw;
+          p {
+            width: 50%;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    footer {
+      margin-top: 5vw;
+
+      p {
+        font-size: 4vw;
+        color: #434242;
+        text-align: center;
+      }
+    }
+  }
+}

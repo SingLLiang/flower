@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 100vw;
+        height: 100vh;
+        background: url('./image/bg.jpeg') no-repeat center/cover;
+      }
+      .container {
+        width: 78.7vw;
+        height: 111.9vw;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0vw 0.5vw 1.8vw 0.6vw rgba(0, 0, 0, 0.3);
+        border-radius: 1.3vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container"></div>
+    </div>
+    <script>
+      let b = {
+        name: 1,
+        b: 2,
+        c: 3,
+      };
+      for (let v in b) {
+        console.log(v);
+      }
+    </script>
+  </body>
+</html>
